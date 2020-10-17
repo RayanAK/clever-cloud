@@ -1,0 +1,116 @@
+@font-face {
+  font-family: "Jedi";
+  src: url("Starjedi.ttf");
+}
+
+@font-face {
+  font-family: "Leoscar";
+  src: url("leoscar/Leoscar\ Serif.ttf");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+#lottie {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  pointer-events: none;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-family: "Jedi";
+  font-size: 3rem;
+  margin: 1em;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.content {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: center;
+  width: 90%;
+  margin-bottom: 1rem;
+  font-family: "Nunito", sans-serif;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background: url("background_space.jpg");
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  min-height: 450px;
+  border-radius: 2em;
+  box-shadow: 0 4px 12px 0px black;
+  text-align: center;
+}
+
+.card img {
+  height: 160px;
+  width: 160px;
+  clip-path: circle();
+}
+
+.card p {
+  font-weight: 700;
+  font-family: "Leoscar";
+  font-size: 20px;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 170px;
+  height: 45px;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: 1.2em;
+  border-radius: 1em;
+  margin-top: 20px;
+  border: 2px solid rgba(189, 90, 168, 0.432);
+  background-image: url("btn_bg.jpg");
+  background-position: center;
+  font-family: "Leoscar";
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 4px 0px rgb(206, 92, 206);
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+}
